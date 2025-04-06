@@ -2,6 +2,7 @@ mod api;
 mod incoming;
 mod observability;
 mod outgoing;
+mod queue;
 
 use anyhow::Context;
 use std::env;
