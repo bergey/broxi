@@ -1,10 +1,11 @@
 mod api;
 mod incoming;
 mod observability;
+mod outgoing;
 
 use anyhow::Context;
 use std::env;
-use std::time::Instant;
+// use std::time::Instant;
 use tracing::*;
 #[macro_use]
 extern crate lazy_static;

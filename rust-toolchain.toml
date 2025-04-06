@@ -1,0 +1,5 @@
+[toolchain]
+channel = "1.86"
+components = [ "rustfmt", "rustc-dev" ]
+targets = [] 
+profile = "default"
