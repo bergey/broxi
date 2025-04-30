@@ -2,6 +2,7 @@ mod api;
 mod incoming;
 mod observability;
 mod outgoing;
+mod pool;
 mod queue;
 
 use anyhow::Context;
@@ -10,7 +11,7 @@ use std::env;
 use tracing::*;
 #[macro_use]
 extern crate lazy_static;
-use prometheus::{self, register_int_counter, IntCounter};
+use prometheus::{self, IntCounter, register_int_counter};
 // use prometheus::{register_histogram, Histogram};
 
 use hyper::server::conn::http1;
